@@ -5,5 +5,5 @@ It supports for backend api for [android application](https://github.com/omgitsp
 
 However, you can always visit the frontend of web app [hosted @ 000webhost](https://thespicelounge.000webhostapp.com/index.php )
 
-Also, [Documentation](docs/index.rst) is provided at for further information.
+Also, [Documentation](docs/index.rst) is provided for further information.
 
