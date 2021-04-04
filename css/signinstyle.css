@@ -1,0 +1,75 @@
+body{
+    background: url('../img/test.jpg');
+    background-size: cover;
+    font-family: Helvetica;
+
+}
+
+.arrangement{
+    max-width: 350px;
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 40px;
+    color: #fff;
+    margin-top: 80px;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    text-rendering: auto;
+}
+
+input[type=text],input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0, 0, 0, 0.10);
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 1px;
+
+}
+
+input[type="radio"]{
+    width: 50%
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0, 0, 0, 0.10);
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+button[type="submit"]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 0px;
+    background: #e8491d;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+button[type="submit"]:hover{
+    background:#e8491d ;
+    opacity: 0.8;
+}
