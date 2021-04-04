@@ -10,7 +10,7 @@ Welcome to TheSpiceLoungWeb's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+# Documentation yet to come.
 
 Indices and tables
 ==================
