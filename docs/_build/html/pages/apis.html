@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APIS &#8212; TheSpiceLoungWeb 1.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Implementations" href="implementation.html" />
+    <link rel="prev" title="Logic Flow" href="logic.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="implementation.html" title="Implementations"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="logic.html" title="Logic Flow"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">TheSpiceLoungWeb 1.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">APIS</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="apis">
+<h1>APIS<a class="headerlink" href="#apis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="cashier">
+<h2>1. Cashier<a class="headerlink" href="#cashier" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 80%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Request type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>List of ordered items (3)</p></td>
+<td><p>GET</p></td>
+</tr>
+<tr class="row-odd"><td><p>Checkout</p></td>
+<td><p>PUSH</p></td>
+</tr>
+<tr class="row-even"><td><p>Table Information</p></td>
+<td><p>GET</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="customer">
+<h2>2. Customer<a class="headerlink" href="#customer" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 80%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Request type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Menu Item Display (3)</p></td>
+<td><p>GET</p></td>
+</tr>
+<tr class="row-odd"><td><p>Place Order (2)</p></td>
+<td><p>POST</p></td>
+</tr>
+<tr class="row-even"><td><p>Feedbacks</p></td>
+<td><p>POST</p></td>
+</tr>
+<tr class="row-odd"><td><p>Feedbacks (2)</p></td>
+<td><p>GET</p></td>
+</tr>
+<tr class="row-even"><td><p>Change in order’s status (3)</p></td>
+<td><p>PUSH</p></td>
+</tr>
+<tr class="row-odd"><td><p>Login</p></td>
+<td><p>GET</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="waiter">
+<h2>3. Waiter<a class="headerlink" href="#waiter" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 80%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Request type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Menu Item Display (3)</p></td>
+<td><p>GET</p></td>
+</tr>
+<tr class="row-odd"><td><p>Place Order (2)</p></td>
+<td><p>POST</p></td>
+</tr>
+<tr class="row-even"><td><p>Feedbacks (2)</p></td>
+<td><p>GET</p></td>
+</tr>
+<tr class="row-odd"><td><p>List of ordered items (3)</p></td>
+<td><p>GET</p></td>
+</tr>
+<tr class="row-even"><td><p>Change in order’s status (3)</p></td>
+<td><p>PUSH</p></td>
+</tr>
+<tr class="row-odd"><td><p>Login</p></td>
+<td><p>GET</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="chef">
+<h2>4. Chef<a class="headerlink" href="#chef" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 80%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Request type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Delete Item</p></td>
+<td><p>POST</p></td>
+</tr>
+<tr class="row-odd"><td><p>Edit Item</p></td>
+<td><p>POST</p></td>
+</tr>
+<tr class="row-even"><td><p>Add Item</p></td>
+<td><p>POST</p></td>
+</tr>
+<tr class="row-odd"><td><p>Menu Item Display (2)</p></td>
+<td><p>GET</p></td>
+</tr>
+<tr class="row-even"><td><p>List of ordered items (3)</p></td>
+<td><p>GET</p></td>
+</tr>
+<tr class="row-odd"><td><p>Change in order’s status (3)</p></td>
+<td><p>PUSH</p></td>
+</tr>
+<tr class="row-even"><td><p>Login</p></td>
+<td><p>GET</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="project-apis">
+<h2>Project apis<a class="headerlink" href="#project-apis" title="Permalink to this headline">¶</a></h2>
+<p>Location of all apis is <a class="reference external" href="https://github.com/omgitspradeep/TheSpiceLoungeWeb/tree/master/apis">backendApis</a></p>
+<dl class="simple">
+<dt>Ex:</dt><dd><p>“<a class="reference external" href="http://localhost/PROJECTS/TheSpiceLounge/apis/allFoodOrders.php">http://localhost/PROJECTS/TheSpiceLounge/apis/allFoodOrders.php</a>”</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">APIS</a><ul>
+<li><a class="reference internal" href="#cashier">1. Cashier</a></li>
+<li><a class="reference internal" href="#customer">2. Customer</a></li>
+<li><a class="reference internal" href="#waiter">3. Waiter</a></li>
+<li><a class="reference internal" href="#chef">4. Chef</a></li>
+<li><a class="reference internal" href="#project-apis">Project apis</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="logic.html"
+                        title="previous chapter">Logic Flow</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="implementation.html"
+                        title="next chapter">Implementations</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/apis.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="implementation.html" title="Implementations"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="logic.html" title="Logic Flow"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">TheSpiceLoungWeb 1.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">APIS</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Pradeep Khanal.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

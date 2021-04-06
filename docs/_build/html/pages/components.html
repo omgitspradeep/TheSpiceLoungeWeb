@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components of Restuarant App &#8212; TheSpiceLoungWeb 1.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Logic Flow" href="logic.html" />
+    <link rel="prev" title="Overview" href="overview.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="logic.html" title="Logic Flow"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="Overview"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">TheSpiceLoungWeb 1.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Components of Restuarant App</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="components-of-restuarant-app">
+<h1>Components of Restuarant App<a class="headerlink" href="#components-of-restuarant-app" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="manager">
+<h2>1. Manager<a class="headerlink" href="#manager" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>He can view all the food orders</p></li>
+<li><p>He can view all the table status (i.e. free or occupied)</p></li>
+<li><p>He can add, remove amd modify employees.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="cashier">
+<h2>2. Cashier<a class="headerlink" href="#cashier" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Can view all the table status (i.e. free or occupied).</p></li>
+<li><p>Can view all food orders of occupied table.</p></li>
+<li><p>Check out the customer and free the table.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="chef">
+<h2>3. Chef<a class="headerlink" href="#chef" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Can view list of all food orders.</p></li>
+<li><p>Can change the order status of food i.e. waiting to cooking and cooking to cooked.</p></li>
+<li><p>Can Add new food item in food menu.</p></li>
+<li><p>Can Delete food item from food menu.</p></li>
+<li><p>Can Modify food item of food menu.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="waiter">
+<h2>4. Waiter<a class="headerlink" href="#waiter" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Can change the order status of food i.e. cooked to served.</p></li>
+<li><p>Can cancel food orders order is still in waiting status.</p></li>
+<li><p>Can place order onbehalf of customer</p></li>
+<li><p>Can view feedbacks of food items.</p></li>
+<li><p>Can free the table.</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Similarly, Apart from Restuarant’s employees Anonymous customer can considered as a component*</p></li>
+</ul>
+</div>
+<div class="section" id="customer">
+<h2>5. Customer<a class="headerlink" href="#customer" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>No login required.</p></li>
+<li><p>Can view Orders of different table. (It is not advised to put this function here.)</p></li>
+<li><p>Can order food directly to chef without the aid of waiter.</p></li>
+<li><p>Can view food review befor order of any food.</p></li>
+<li><p>View order status of the ordered foods. (Like waiting, cooking, cooked or served)</p></li>
+<li><p>Can cancel the order only if order is still in waiting status.</p></li>
+<li><p>Can give feedback and rate stars only to served items.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Components of Restuarant App</a><ul>
+<li><a class="reference internal" href="#manager">1. Manager</a></li>
+<li><a class="reference internal" href="#cashier">2. Cashier</a></li>
+<li><a class="reference internal" href="#chef">3. Chef</a></li>
+<li><a class="reference internal" href="#waiter">4. Waiter</a></li>
+<li><a class="reference internal" href="#customer">5. Customer</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="overview.html"
+                        title="previous chapter">Overview</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="logic.html"
+                        title="next chapter">Logic Flow</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/components.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="logic.html" title="Logic Flow"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="Overview"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">TheSpiceLoungWeb 1.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Components of Restuarant App</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Pradeep Khanal.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

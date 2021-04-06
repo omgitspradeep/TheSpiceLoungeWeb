@@ -1,0 +1,13 @@
+==========
+Logic Flow
+==========
+
+Project structure with Activity, fragment and classes
+=====================================================
+
+
+.. figure:: pages/images/docs.png
+   :alt: Project control flow
+
+   Flow of control in diffrent components
+

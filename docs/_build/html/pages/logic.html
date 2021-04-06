@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logic Flow &#8212; TheSpiceLoungWeb 1.0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="APIS" href="apis.html" />
+    <link rel="prev" title="Components of Restuarant App" href="components.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="apis.html" title="APIS"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="components.html" title="Components of Restuarant App"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">TheSpiceLoungWeb 1.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Logic Flow</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="logic-flow">
+<h1>Logic Flow<a class="headerlink" href="#logic-flow" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="project-structure-with-activity-fragment-and-classes">
+<h2>Project structure with Activity, fragment and classes<a class="headerlink" href="#project-structure-with-activity-fragment-and-classes" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id1">
+<img alt="Project control flow" src="../_images/start.png" />
+<p class="caption"><span class="caption-text">Flow of control in diffrent components</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Here, what we can see is:
+As app opens we transit automatically from StartActivity to MainActivity.
+MainActivity has 4 fragments.
+Each fragments leads to diffrent screens.
+<em>Entertainment</em> fragment redirects us to webview that offers us recipes of different food items.
+<em>AboutUs</em> fragment describes the Restuarant.
+<em>Login</em> (i.e. login) fragment can take us to CashierActivity, AdminActivity, WaiterAcivity and ChefActivity.
+<em>HomeFragment*(i.e home) displays all the food items with the help of *foodmenu</em> adapter. Upon click on food item we are transit to <em>FoodOrderActivity</em>. This activity uses model class <em>CustomerFeedback</em> with ability to submit feedbacks as hidden.
+Similarly, <em>HomeFragment</em> has a fab element, upon click on that fab - we are taken to another fragment called <em>CustomerOrderedListFragement</em>. It displays the ordered list with the help of adapter <em>OrderedListAdapterCust</em>. It also allows us to cancel the food order until food status is “WAITING”. Upon click we are transit to model class <em>CustomerFeedbackActivity</em> with abitlity to submit feedbacks.</p>
+<p>We’ll further discuss on logic of different staffs.</p>
+</div>
+<div class="section" id="cashieractivity">
+<h2>1. CashierActivity<a class="headerlink" href="#cashieractivity" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id2">
+<img alt="Cashier control flow" src="../_images/cashier.png" />
+<p class="caption"><span class="caption-text">Flow of control for cashier component in Project</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Here, what we can see is:</p>
+</div>
+<div class="section" id="adminactivity">
+<h2>2. AdminActivity<a class="headerlink" href="#adminactivity" title="Permalink to this headline">¶</a></h2>
+<p>Admin is redirect to WebView which views the web version of admin panel.
+It is the Manager component of Restuarant.</p>
+</div>
+<div class="section" id="waiteractivity">
+<h2>3. WaiterActivity<a class="headerlink" href="#waiteractivity" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id3">
+<img alt="Waiter control flow" src="../_images/waiter.png" />
+<p class="caption"><span class="caption-text">Flow of control for waiter component in Project</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Here, what we can see is:</p>
+</div>
+<div class="section" id="chefactivity">
+<h2>4. ChefActivity<a class="headerlink" href="#chefactivity" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id4">
+<img alt="Chef control flow" src="../_images/chef.png" />
+<p class="caption"><span class="caption-text">Flow of control for Chef component in Project</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>Here, what we can see is:</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Logic Flow</a><ul>
+<li><a class="reference internal" href="#project-structure-with-activity-fragment-and-classes">Project structure with Activity, fragment and classes</a></li>
+<li><a class="reference internal" href="#cashieractivity">1. CashierActivity</a></li>
+<li><a class="reference internal" href="#adminactivity">2. AdminActivity</a></li>
+<li><a class="reference internal" href="#waiteractivity">3. WaiterActivity</a></li>
+<li><a class="reference internal" href="#chefactivity">4. ChefActivity</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="components.html"
+                        title="previous chapter">Components of Restuarant App</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="apis.html"
+                        title="next chapter">APIS</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/logic.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="apis.html" title="APIS"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="components.html" title="Components of Restuarant App"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">TheSpiceLoungWeb 1.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Logic Flow</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Pradeep Khanal.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>
